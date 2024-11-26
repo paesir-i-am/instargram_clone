@@ -1,5 +1,5 @@
-$class-101-black: #262626;
-$class-101-gray: #e8e8e8;
+$insta-black: #262626;
+$insta-gray: #e8e8e8;
 
 #root {
   .login{
@@ -24,14 +24,14 @@ $class-101-gray: #e8e8e8;
         .custom-inp{
           &>.title{
             font-size: 12px;
-            color: $class-101-black;
+            color: $insta-black;
           }
 
           .inp{
             margin-top: 4px;
             width: 272px;
             border-radius: 5px;
-            border: 1px solid $class-101-gray;
+            border: 1px solid $insta-gray;
             height: 34px;
             background-color: white;
 
@@ -55,7 +55,7 @@ $class-101-gray: #e8e8e8;
         .login-btn{
           height: 34px;
           width: 100%;
-          background-color: $class-101-black;
+          background-color: $insta-black;
           color: white;
           font-size: 12px;
           display: flex;
@@ -78,7 +78,7 @@ $class-101-gray: #e8e8e8;
 
         &>.title{
           font-size: 12px;
-          color: $class-101-black;
+          color: $insta-black;
           margin-right: 8px;
         }
 
