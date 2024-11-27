@@ -1,0 +1,21 @@
+#root{
+  .join{
+    .wrapper{
+      .logo{}
+      .join-contents{
+        .custom-inp{
+          .top{
+            &>.title{}
+            .warning{}//end warning
+          }//end top
+          .inp{
+            &::placeholder{}
+          }//end inp
+        }//end custom-inp
+      }//end join-contents
+
+      .password-inp, nickname-inp{}
+      .join-btn{}
+    }//end wrapper
+  }//end join
+}
