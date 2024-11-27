@@ -14,7 +14,7 @@ function Join() {
               <div className="warning"></div>
             </div>
             <div className="inp">
-              <input type="email" placeholder="이메일을 입력해주세요" required= />
+              <input type="email" placeholder="이메일을 입력해주세요" required />
             </div>
           </div>
           <div className="password-inp custom-inp">
@@ -23,7 +23,7 @@ function Join() {
               <div className="warning">비밀번호는 8자리 이상이여야 합니다</div>
             </div>
             <div className="inp">
-              <input type="email" placeholder="비밀번호를 입력해주세요" required= />
+              <input type="email" placeholder="비밀번호를 입력해주세요" required />
             </div>
           </div>
           <div className="nickname-inp custom-inp">
@@ -32,7 +32,7 @@ function Join() {
               <div className="warning"></div>
             </div>
             <div className="inp">
-              <input type="text" placeholder="닉네임을 입력해주세요" required= />
+              <input type="text" placeholder="닉네임을 입력해주세요" required />
             </div>
           </div>
           <button className="join-btn" type="submit">
