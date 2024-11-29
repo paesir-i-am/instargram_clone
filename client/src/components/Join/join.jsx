@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/join.css'
 
 function Join() {
   return (

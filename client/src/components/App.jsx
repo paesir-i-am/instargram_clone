@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import '@styles/core.css';
-import Welcome from './Welcome/Welcome';
 import Login from './Login/login';
 import Join from './Join/join';
 
