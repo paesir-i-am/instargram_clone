@@ -6,6 +6,7 @@ import Join from './Join/join';
 import MainFeed from './MainFeed/MainFeed';
 import Header from './Header/header';
 import Detail from './Detail/detail';
+import Profile from './Profile/Profile';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <Route path="/" exact component={Login} />
         <Route path="/join" exact component={Join} />
         <Route path="/feed" exact component={MainFeed} />
+        <Route path="/profile" exact component={Profile} />
       </Switch>
-      {true && <Detail/>}
+      {false && <Detail/>}
     </Router>
   );
 }
