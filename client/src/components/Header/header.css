@@ -3,7 +3,6 @@
   position: fixed;
   top: 0;
   background-color: white;
-  z-index: 40;
 }
 #root .header .wrapper {
   margin: 0 auto;

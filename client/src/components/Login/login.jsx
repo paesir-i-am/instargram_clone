@@ -1,55 +1,24 @@
-import React, { useCallback, useState } from 'react';
-import './css/login.css';
-import firebaseApp from '@config/firebaseApp';
-
-const Fauth = firebaseApp.auth();
+import React from 'react';
+import './css/login.css'
 
 function Login() {
-
-  const [email, setEmail] = useState(undefined);
-  const [password, setPassword] = useState(undefined);
-  const __doLogin = useCallback(
-    (e) => {
-      e.preventDefault();
-      Fauth.signInWithEmailAndPassword(email, password).then(credential => {
-        const { user } = credential;
-        console.log(user);
-      }).catch(error => {
-        console.log(error);
-      });
-    },
-    [email, password]
-  );
-
-  const __logout = useCallback(()=>{
-    Fauth.signOut().then(() => {
-      console.log('logout complete')
-    }).catch(err=>{
-      console.log(err);
-    })
-  },[])
-
   return (
     <div className="login">
       <div className="wrapper">
         <div className="logo">
           <img src="/assets/welcome/logo.svg" alt="logo" />
         </div>
-        <form className="login-contents" onSubmit={__doLogin}>
+        <form className="login-contents">
           <div className="email-inp custom-inp">
             <div className="title txt-bold">이메일</div>
             <div className="inp">
-              <input type="email" placeholder="이메일을 입력해주세요"
-                     onBlur={(e) => setEmail(e.target.value)}
-                     required />
+              <input type="email" placeholder="이메일을 입력해주세요" required />
             </div>
           </div>
           <div className="password-inp custom-inp">
             <div className="title txt-bold">비밀번호</div>
             <div className="inp">
-              <input type="password" placeholder="비밀번호를 입력해주세요"
-                     onBlur={(e) => setPassword(e.target.value)}
-                     required />
+              <input type="password" placeholder="비밀번호를 입력해주세요" required />
             </div>
           </div>
           <button className="login-btn" type="submit">로그인 하기</button>
