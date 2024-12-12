@@ -63,7 +63,6 @@ function Detail() {
                     </div>
                     <div className="title txt-bold">34k</div>
                   </div>
-
                   <div className="reply-btn">답글</div>
                 </div>
 
